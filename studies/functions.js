@@ -32,12 +32,14 @@ function simpleMath(a, z) {
 
 //4. Assigning a Function to a Variable
 //Easy peasy. Literally just assign a variable to it.
-var x = simpleMath(5, 4); //function has been assigned to variable x. 
-function simpleMath(a, z) { 
-    return a + z;
-}
-var msg = x + " is the correct answer";
-console.log(msg);
+var add = function (x, y) {
+    return x + y;  
+};
+
+add(8, 15);
+//The variable add has been assigned a function adding the parameters x and y
+//and returning their sum. Now, whenever add is called and passed arguments,
+//it will perform the function assigned to it such as on line 39, returning 23.
 
 //5. Specifying Inputs and Outputs
 // Functions Inputs are the same as their parameters. In order to get an output though,
@@ -45,6 +47,17 @@ console.log(msg);
 function simpleMath(a, z) { // a and z on this line are inputs or parameters
     return a + z; //a + z will evaluate to the returned output after the code runs
 }
+
+//Function may optionally take parameters or arguments. The functions above do
+//take input parameters. However the one below does not:
+function call() {
+    console.log("Yo, sup");
+}
+call();
+//The above function takes no parameters and merely executes its code block at
+//call time. As above, functions do not require a return statement, however 
+//you must keep in mind that a function without a return statement is UNDEFINED
+
 //6. Scope
 let a = "Benji";
 

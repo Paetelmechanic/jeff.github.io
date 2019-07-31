@@ -10,11 +10,26 @@ var name = "Jeff"; // here the = sign is assigning name the value of Jeff
 // The +,-,*, %, / operators do much the same thing they would do in normal arithmetic
 // As an aside, the + operator can also be used to concatenate 
 console.log("Loki" + " is a beast!"); // prints the two strings together
+(x, y) => {
+  return x * y; //multiplies x and y and returns their product  
+};
 
+(x, y) => {
+  return x / y; //divides x and y and returns their quotient  
+};
+
+(x, y) => {
+  return x - y; //subtracts x and y and returns the answer  
+};
+
+(x, y) => {
+  return x % y === 0; //returns the division remainder
+};
 //3. Comparison Operators
 // The >,<, ===, and == operators are used to compare values and they produce a boolean
 9 > 4; // This simple code returns true, because 9 IS greater than 4
 "dogs" === "cats"; // Returns false because the string dogs is not the same as the string cats
+'two' == 2; //Returns true because in JS the string of 2 and the number 2 are loosely equal
 
 //4. Logical Operators
 // Logical operators are used for condition statements when certain conditions must be met
