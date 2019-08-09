@@ -42,15 +42,21 @@ var pet = "badger";
 //Switch statements take a variable and test if it is true in various cases. If
 //it evaluates to true then a block of code is run. However, if it gets through
 //all cases and none are true, then the default code block runs. All switch 
-//statements require a default code block
-switch (pet) {
-    case 'parakeet':
-        console.log("A fine feathered friend");
-        break;
-    case 'dog':
+//statements require a default code block.
+//The syntax for Switch statements is as follows: switch keyword followed by the
+//variable in parentheses, then the code block. Inside the code block, we put the
+//cases, the block to run if the case is true, break statements to separate the 
+//cases, and finally a default statement to end the Switch statement.
+switch (pet) { // The initial switch statement accepts a variable
+    case 'parakeet': //After the case keyword, we test for a value, if it matches
+    //the code block runs
+        console.log("A fine feathered friend"); //Code block to run
+        break; //Use break to end the case. If you don't then the next case will
+        //run
+    case 'dog': //Put as many cases as you want to test against
         console.log("Loki you da best");
         break;
-    case 'cat':
+    case 'cat'://Moar cases
         console.log("Boooo, I want my money back");
         break;
     default:

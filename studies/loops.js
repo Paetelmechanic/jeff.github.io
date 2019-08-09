@@ -2,7 +2,8 @@
 /* Loops run specific code multiple times, each time with a slightly different value 
 *  as per the modification made to it in the loop
 */
-//1. For loops
+//1. For loops - great for iterating over index based data such as strings and
+// arrays. We'd want to use it in this case.
 var testArray = [1, 3, 5, 7, 11, 13, 17, 19];
 for (var i = 0; i < testArray.length; i++) { // loops forward through array up to the
     //array's length
@@ -23,8 +24,8 @@ for (var i = testArray.length - 1; i > -1; i--) {
 
 //If I wanted to loop forward a specific number of times, I merely change my
 //stop condition
-for (var i = testArray.length - 1; i > testArray.length - 5; i--){ //If I only 
-//want the last 4 elements in an array
+for (var i = 0; i < 4; i++){ //If I only 
+//want the first four elements in an array
     console.log(testArray[i]);
 }
 
